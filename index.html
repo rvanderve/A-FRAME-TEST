@@ -23,7 +23,13 @@
       <a-sky src="#lake"></a-sky>
       <a-collada-model src="#sculpture" position="0 0 -2"></a-collada-model>
       <a-image src="#pdx" width="10" height="5" position="-2 1.2 1.2"
-               scale="0.2 0.2 0.2"></a-image>
+               scale="0.2 0.2 0.2">
+                <a-event name="cursor-mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
+        <a-event name="cursor-mouseenter" target="#shadow" scale="3 2 2"></a-event>
+        <a-event name="cursor-mouseleave" scale="1 1 1" color="#F16745"></a-event>
+        <a-event name="cursor-mouseleave" target="#shadow" scale="2 2 2"></a-event>
+        
+      </a-image>
     </a-scene>
   </body>
 </html>
